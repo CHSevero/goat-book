@@ -27,7 +27,7 @@ class ItemValidationTest(FuntionalTest):
 
         # Perversely, she decides to submit a second blank list item
         self.browser.find_element(By.ID, "id_new_item").send_keys(Keys.ENTER)
-        return
+
         # She receives a similar warning on the list page
         self.wait_for(
             lambda: self.assertEqual(
