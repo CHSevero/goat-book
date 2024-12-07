@@ -29,3 +29,7 @@ class ItemFormTest(TestCase):
         self.assertEqual(new_item, Item.objects.get())
         self.assertEqual(new_item.text, "do me")
         self.assertEqual(new_item.list, mylist)
+
+
+class ExistingListItemFormTest(TestCase):
+    
